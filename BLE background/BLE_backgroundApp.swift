@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BLE_backgroundApp: App {
+    @StateObject var store = BLEStore()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }

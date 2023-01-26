@@ -11,6 +11,8 @@
 		DAFEC4982982A9290041F4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC4972982A9290041F4BA /* ContentView.swift */; };
 		DAFEC49A2982A92A0041F4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC4992982A92A0041F4BA /* Assets.xcassets */; };
 		DAFEC49D2982A92A0041F4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC49C2982A92A0041F4BA /* Preview Assets.xcassets */; };
+		DAFEC4A42982A93E0041F4BA /* BLEStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC4A32982A93E0041F4BA /* BLEStore.swift */; };
+		DAFEC4A72982DB4E0041F4BA /* Data extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC4A62982DB4E0041F4BA /* Data extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		DAFEC4972982A9290041F4BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAFEC4992982A92A0041F4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFEC49C2982A92A0041F4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAFEC4A32982A93E0041F4BA /* BLEStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEStore.swift; sourceTree = "<group>"; };
+		DAFEC4A52982B1250041F4BA /* BLE-background-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BLE-background-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DAFEC4A62982DB4E0041F4BA /* Data extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		DAFEC4942982A9290041F4BA /* BLE background */ = {
 			isa = PBXGroup;
 			children = (
+				DAFEC4A52982B1250041F4BA /* BLE-background-Info.plist */,
 				DAFEC4952982A9290041F4BA /* BLE_backgroundApp.swift */,
 				DAFEC4972982A9290041F4BA /* ContentView.swift */,
 				DAFEC4992982A92A0041F4BA /* Assets.xcassets */,
 				DAFEC49B2982A92A0041F4BA /* Preview Content */,
+				DAFEC4A32982A93E0041F4BA /* BLEStore.swift */,
+				DAFEC4A62982DB4E0041F4BA /* Data extension.swift */,
 			);
 			path = "BLE background";
 			sourceTree = "<group>";
@@ -138,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFEC4982982A9290041F4BA /* ContentView.swift in Sources */,
+				DAFEC4A42982A93E0041F4BA /* BLEStore.swift in Sources */,
+				DAFEC4A72982DB4E0041F4BA /* Data extension.swift in Sources */,
 				DAFEC4962982A9290041F4BA /* BLE_backgroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +280,9 @@
 				DEVELOPMENT_TEAM = S4BJCS5AXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "BLE-background-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to access the device all the time";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "The usage description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +311,9 @@
 				DEVELOPMENT_TEAM = S4BJCS5AXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "BLE-background-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to access the device all the time";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "The usage description";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
